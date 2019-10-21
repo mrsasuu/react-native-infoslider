@@ -8,7 +8,7 @@
     "javascript"
   ],
   "dependencies": {
-    "react-native-swiper": "^1.6.0"
+    "react-native-swiper": "^1.6.0-nightly"
   },
    "author": "Sebastian Diaz"
 }
