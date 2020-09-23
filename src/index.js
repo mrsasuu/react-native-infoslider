@@ -8,10 +8,10 @@ import {
 } from 'react-native'
 
 import Swiper from 'react-native-swiper'
-const {width} = Dimensions.get('window')
+const {width} = Dimensions.get('window') 
 const Slide = props => (
   
-  <View style={styles.TextContainer}>    
+  <View style={[styles.TextContainer, props.textStyle]}>    
     <Animated.Text
        style={{
           color:props.titleColor,
@@ -134,15 +134,15 @@ export default class infoslider extends Component{
   render(){
     return(
 
-      <View style={styles.container}>
-        <View style={styles.ImagesContainer}>
+      <View style={[styles.container, this.props.containerStyle]}>
+        <View style={[styles.ImagesContainer, , this.props.imagesContainerStyle]}>
             <Animated.Image  
                 source={this.state.currentImage}
                 style={{
-                    position:'absolute',
+                    position: this.props.absoluteImage != false ? 'absolute' : 'relative',
                     bottom:0,
-                    width:240,
-                    height:240,
+                    width: width * 0.425,
+                    height:width * 0.425,
                     borderRadius:120,
                     opacity:this.state.imgValue,
                       transform: [                    
@@ -170,6 +170,7 @@ export default class infoslider extends Component{
           this.props.data.map((data, i) => 
               <Slide
                 key={i}
+                textStyle={this.props.textStyle}
                 titleColor={this.props.titleColor}
                 textColor={this.props.textColor}
                 titulo={data.title} 
@@ -195,20 +196,21 @@ export default class infoslider extends Component{
 const styles = StyleSheet.create({
 
   container: {
-    flex:1,
+    
+    
      justifyContent: 'center',
      alignItems: 'center',
      borderWidth:0
    },
 
   ImagesContainer: {
-   flex:1,
+   
     justifyContent: 'center',
     alignItems: 'center',
     borderWidth:0
   },
   TextContainer: {
-    flex:1,
+    
      alignItems: 'center',
      borderWidth:0
    }

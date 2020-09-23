@@ -1,14 +1,42 @@
 {
-  "name": "react-native-infoslider",
-  "version": "1.2.0",
+  "_args": [
+    [
+      "git+https://github.com/mrsasuu/react-native-infoslider.git",
+      "/Users/mrsasuu/Proyectos/Proyectos/New gotmy Project/gotmy-app"
+    ]
+  ],
+  "_from": "git+https://github.com/mrsasuu/react-native-infoslider.git",
+  "_id": "react-native-infoslider@git+https://github.com/mrsasuu/react-native-infoslider.git#5a4f0107f44b8b1c2ab93546e61abcb596dd0fe1",
+  "_inBundle": false,
+  "_integrity": "",
+  "_location": "/react-native-infoslider",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "git",
+    "raw": "git+https://github.com/mrsasuu/react-native-infoslider.git",
+    "rawSpec": "git+https://github.com/mrsasuu/react-native-infoslider.git",
+    "saveSpec": "git+https://github.com/mrsasuu/react-native-infoslider.git",
+    "fetchSpec": "https://github.com/mrsasuu/react-native-infoslider.git",
+    "gitCommittish": null
+  },
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "git+https://github.com/mrsasuu/react-native-infoslider.git#5a4f0107f44b8b1c2ab93546e61abcb596dd0fe1",
+  "_spec": "git+https://github.com/mrsasuu/react-native-infoslider.git",
+  "_where": "/Users/mrsasuu/Proyectos/Proyectos/New gotmy Project/gotmy-app",
+  "author": {
+    "name": "Sebastian Diaz"
+  },
+  "dependencies": {
+    "react-native-swiper": "^1.6.0-nightly"
+  },
   "description": "React native info slider with react-native-swipper",
-  "main": "src/index.js",
   "keywords": [
     "reactnative",
     "javascript"
   ],
-  "dependencies": {
-    "react-native-swiper": "^1.6.0-nightly"
-  },
-   "author": "Sebastian Diaz"
+  "main": "src/index.js",
+  "name": "react-native-infoslider",
+  "version": "1.2.0"
 }
